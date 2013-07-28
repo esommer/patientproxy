@@ -1,0 +1,1051 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+body {
+	line-height: 1;
+	color: black;
+	background: white;
+}
+ol, ul {
+	list-style: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+
+
+/* ######################################## GENERAL */
+.accessible {
+	float: left;
+	font-size: 1px;
+	margin-left: -1000%;
+	}
+h6.help {
+	float: right;
+	text-align: right;
+	}
+a:link, a:visited, a:hover, a:active {
+	color: inherit;
+	text-decoration: none;
+	}
+body {
+	font-family: "Helvetica Neue", Arial, Verdana, sans-serif;
+	font-size: 1.3em;
+	line-height: 1.1em;
+	color: #444444;
+	}
+#headercolor {
+	background: -webkit-gradient(linear, left top, left bottom, from(#E2DDEE), to(#FFFFFF));
+	background: -moz-linear-gradient(top, #E2DDEE, #FFF, #FFF, #FFF);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#E2DDEE', endColorstr='#FFFFFF');
+	background: -o-linear-gradient(top, #E2DDEE, #FFF, #FFF);
+	min-height: 120px;
+	width: 100%;
+	margin: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -100;
+	}
+#wrapper {
+	width: 90%;
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1%;
+	}
+#header {
+	width: 100%;
+	}
+#mainbody {
+	clear: both;
+	width: 100%;
+	margin-top: 40px;
+	padding-top: 0;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	}
+/*#sidebar {
+	float: right;
+	width: 19%;
+	margin-top: 20px;
+	}*/
+hr.thin {
+	border: none;
+	color: #888888;
+	height: 1px;
+	background-color: #DEDEDE;
+	}
+/* ======================================= END GENERAL */
+
+
+
+/* ######################################## LOGO & TOPLINKS */
+#header #logo {
+	float: left;
+	width: 39%;
+	height: 70%;
+	}
+#header #littlelinks {
+	float: right;
+	width: 50%;
+	font-size: .75em;
+	font-weight: 400;
+	color: #777777;
+	margin-top: 20px;
+	margin-right: 3%;
+	}
+#header #littlelinks ul {
+	text-align: right;
+	}
+#header #littlelinks ul li {
+	display: inline;
+	margin-left: 3px;
+	margin-right: 3px;
+	}
+/* ===================================== END LOGO & TOPLINKS */
+
+
+	
+/* ######################################## SIDEBAR */
+#sidebar #helpbox {}
+#sidebar #helpbox p.helptext {}
+#sidebar #summarybox {}
+/* ======================================= END SIDEBAR */
+
+
+
+/* ######################################## BUTTONS */
+ul.buttons {
+	margin-top: 20px;
+	}
+.purchasebutton, .nextbutton, .backbutton {
+	width: 180px;
+	height: 50px;
+	border: none;
+	font-family: inherit;
+	font-size: 1em;
+	font-weight: 500;
+	color: #444444;
+	cursor: pointer;
+	margin-bottom: 50px;
+	background-attachment: fixed;
+	}
+.nextbutton {
+	background: url(../images/continue_states.png) no-repeat;
+	float: right;
+	}
+.backbutton {
+	background: url(../images/back_states.png);
+	float: left;
+	}
+.nextbutton:hover {
+	background-position: 0px -50px;
+	color: #333333;
+	}
+.nextbutton:active {
+	background-position: 0px -100px;
+	color: #222222;
+	}
+.backbutton:hover {
+	background-position: 0px -50px;
+	color: #333333;
+	}
+.backbutton:active {
+	background-position: 0px -100px;
+	color: #222222;
+	}
+.purchasebutton {
+	background: url(../images/continue_states.png) no-repeat;
+	float: center;
+	}
+.purchasebutton:hover {
+	background-position: 0px -50px;
+	color: #333333;
+	}
+.purchasebutton:active {
+	background-position: 0px -100px;
+	color: #222222;
+	}
+a:link.nextbutton, a:visited.nextbutton, a:hover.nextbutton, a:active.nextbutton, a:link.backbutton, a:visited.backbutton, a:hover.backbutton, a:active.backbutton {
+	line-height: 2.75em;
+	text-align: center;
+}
+/* ======================================= END BUTTONS */
+	
+	
+	
+/* ######################################## QUESTION PAGES */
+div.questionblock {
+	float: left;
+	width: 80%;
+	margin-top: 20px;
+	margin-left: 10%;
+	}
+div.pageheight {
+	min-height: 400px;
+}
+span.questiontext {
+	font-size: 1.15em;
+	margin-bottom: 25px;
+	width: 100%;
+	font-weight: 500;
+	line-height: 1.3em;
+	}
+span.help {
+	font-weight: 800;
+	font-size: 1.2em;
+	color: #FAC971;
+	text-shadow: 0px 1px 2px #777777;
+	float: right;
+	margin-right: 5px;
+	margin-top: -4px;
+	height: 25px;
+	width: 20px;
+	padding: 2px;
+	padding-left: 6px;
+	margin-right: 10px;
+	margin-top: 2px;
+	height: 30px;
+	width: 25px;
+	padding: 4px;
+	padding-left: 10px;
+	/*background-image: url('/images/q.png');
+	height: 30px;
+	width: 30px;
+	border: 1px solid red;*/
+	}
+div.helpbox {
+	position: absolute;
+	width: 20px;
+	display: inline;
+	margin-left: 25px;
+	}
+div.helpbox span.help:hover {
+	text-shadow: 0px 1px 2px #111111;
+	/*color: #FBB03B;*/
+	cursor: pointer;
+	}
+div.helpbox span.helptext {
+	display: block;
+	font-size: .7em;
+	color: #777;
+	padding: 5px 10px;
+	margin-top: 5px;
+	font-weight: 300;
+	background: #F7F6F0;
+	border: 1px solid #CCCCCC;
+	/*width: 85%;
+	margin-left: auto;
+	margin-right: auto;*/
+	display: none;
+	z-index: 100;
+	position: absolute;
+	left: 20px;
+	top: 0px;
+	/*top: 175px;
+	left: 875px;*/
+	width: 250px;
+	line-height: 1.3em;
+	}
+div.helpbox span.helptext.start {
+	width: 350px;
+	height: 280px;
+	padding: 10px;
+	/*z-index: 100;
+	position: absolute;
+	top: 100px;
+	left: 550px;*/
+	}
+div.helpbox span.helptext.start img {
+	border: 1px solid #333;
+	}
+div.helpbox span.helptext a {
+	text-decoration: underline;
+	}
+/* ======================================= END QUESTION PAGES */
+	
+	
+		
+/* ######################################## FORM ELEMENTS */
+fieldset {
+	margin-top: 20px;
+	margin-bottom: 30px;
+	font-size: 1em;
+	/*border-bottom: 1px solid #dddddd;*/
+	}
+fieldset fieldset {
+	margin-left: 8%;
+	margin-top: 2px;
+	margin-bottom: 6px;
+	font-size: 1em;
+	border: none;
+	}
+legend {
+	font-size: 1em;
+	padding-bottom: 10px;
+	line-height: 1.2em;
+	/*display: none;*/
+	}
+ul {
+	margin-left: 5%;
+	margin-bottom: 10px;
+	}
+li {
+	/*margin-top: 10px;
+	margin-bottom: 10px;*/
+	}
+li li {
+	/*margin-top: 5px;
+	margin-bottom: 5px;*/
+	}
+span.form_label {
+	display: inline;
+	width: 25%;
+	padding-top: 2px;
+	text-align: right;
+	padding-right: 20px;
+	padding-left: 20px;
+	font-weight: 500;
+	font-size: .9em;
+	color: #460069;
+	color: #662D91;
+	float: left;
+	}
+span.form_label.required_field {
+	}
+label.error {
+	font-size: .6em;
+	color: #CC0033;
+	margin-left: 10px;
+	width: 100px;
+	float: right;
+	line-height: 1em;
+	font-weight: 300;
+	}
+fieldset fieldset.form_set {
+	margin-left: 2%;
+	}
+fieldset fieldset span.form_label {
+	font-size: .8em;
+	}
+fieldset fieldset textarea {
+	width: 60%;
+	}
+span.checkbox_label, span.radio_label {
+	margin-left: 40px;
+	display: block;
+	}
+input[type=text] {
+	display: inline;
+	font-family: "Helvetica Neue", Arial, Verdana, sans-serif;
+	padding: 9px 7px 10px 7px;
+	width: 50%;
+	font-size: 1em;
+	height: 20px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	margin-bottom: 8px;
+	opacity: 1;
+	border: 1px solid rgba(100, 100, 100, 0.5);
+	-moz-box-shadow: 0px 0px 3px rgba(100, 100, 100, 0.5) inset;
+	-webkit-box-shadow: 0px 0px 3px rgba(100, 100, 100, 0.5) inset;
+	box-shadow: 0px 0px 3px rgba(100, 100, 100, 0.5) inset;
+	}
+textarea {
+	font-family: "Helvetica Neue", Arial, Verdana, sans-serif;
+	padding: 3px 7px 10px 7px;
+	font-size: 1em;
+	width: 90%;
+	height: 50px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	margin-bottom: 8px;
+	opacity: 1;
+	border: 1px solid rgba(100, 100, 100, 0.5);
+	-moz-box-shadow: 0px 0px 3px rgba(100, 100, 100, 0.5) inset;
+	-webkit-box-shadow: 0px 0px 3px rgba(100, 100, 100, 0.5) inset;
+	box-shadow: 0px 0px 3px rgba(100, 100, 100, 0.5) inset;
+	margin-top: -10px;
+	}
+input.w2 {
+	width: 40px;
+	}
+input.w5 {
+	width: 100px;
+	}
+input.whalf {
+	width: 180px;
+	}
+.checkbox, .radio {
+	width: 25px;
+	height: 25px;
+	padding: 2px 2px 0 0;
+	background: url(../images/checkboxes.png) no-repeat;
+	display: block;
+	clear: left;
+	float: left;
+}
+.radio {
+	background: url(../images/radios.png) no-repeat;
+	width: 27px;
+	height: 27px;
+	padding: 2px 2px 0 0;
+}
+.justtext {
+	font-size: .8em;
+	float: right;
+	color: #888888;
+	}
+span.strong {
+	font-weight: bold;
+}
+span.smaller {
+	font-size: .9em;
+	}
+textarea.halfwidth {
+	width: 50%;
+	margin-top: 2px;
+	}
+ul.form_ul.otherpages {
+	margin-left: -5%;
+	margin-top: 10px;
+	}
+ul.form_ul.otherpages li span.form-field {
+	width: 50%;
+	}
+ul.form_ul.otherpages span.instructions{
+	font-size: .9em;
+	font-weight: 300;
+	float: right;
+	margin-right: 25px;
+	color: #888888;
+	width: 175px;
+	line-height: 1.1em;
+	}
+/* ======================================= END FORM ELEMENTS */
+
+
+
+/* ######################################## INFO PAGES */
+div.pagecontent {
+	width: 850px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: .85em;
+	}
+div.pagecontent h3 {
+	color: #444444;
+	font-size: 1.2em;
+	font-weight: 600;
+	margin: 20px 0 20px 0;
+	line-height: normal;
+	text-align: left;
+	}
+div.pagecontent div.centericons {
+	width: 300px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	}
+div.pagecontent div.centericons a {
+	margin-left: 7px;
+	}
+div.pagecontent p {
+	padding: 10px;
+	line-height: 1.2em;
+	}
+div.pagecontent p span.bold {
+	font-weight: bold;
+	}
+div.pagecontent p a {
+	text-decoration: underline;
+	}
+/* ======================================= END INFO PAGES */
+
+
+
+/* ######################################## SPLASH PAGE */
+div.topsection div.imageandcaption {
+	width: 50%;
+	float: right;
+	padding-top: 15px;
+	}
+div.topsection div.imageandcaption p {
+	font-size: .6em;
+	line-height: normal;
+	font-weight: 400;
+	margin-top: 5px;
+	padding: 5px;
+	text-align: left;
+	color: #666666;
+	width: 90%;
+	}
+div.topsection div.text {
+	text-align: left;
+	width: 40%;
+	margin-left: 2%;
+	padding-top: 30px;
+	}
+div.topsection h4 {
+	font-size: 1.2em;
+	line-height: normal;
+	font-weight: 500;
+	color: #888888;
+	color: #460069;
+	color: #662D91;
+	color: #444444;
+	line-height: normal;
+	margin-bottom: 20px;
+	padding-left: 10px;
+	}
+div.topsection h2 {
+	font-size: .8em;
+	line-height: normal;
+	color: #666666;
+	margin-bottom: 20px;
+	padding-left: 10px;
+	}
+div.topsection h3 {
+	font-size: .8em;
+	font-style: italic;
+	line-height: normal;
+	color: #666666;
+	margin-bottom: 20px;
+	padding-left: 10px;
+	}
+div.start_form {
+	width: 190px;
+	height: 60px;
+	margin-left: 55%;
+	margin-top: 25px;
+	}
+div.topsection p.launch {
+	color: #666666;
+	font-size: .9em;
+	font-weight: 500;
+	line-height: normal;
+	text-align: center;
+	}
+div.topsection p.date {
+	color: #F5B548;
+	font-size: 1.1em;
+	font-weight: 600;
+	margin-bottom: 40px;
+	line-height: normal;
+	text-align: center;
+	}
+div.topsection div.centericons {
+	width: 300px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	}
+div.topsection div.text div.centericons a {
+	margin-left: 7px;
+	}
+div.threecolumn {
+	width: 100%;
+	clear: both;
+	}
+div.threecolumn div.line {
+	background-color: #888888;
+	width: 1px;
+	height: 300px;
+	display: inline;
+	float: left;
+	}
+div.threecolumn div.column {
+	padding-top: 5px;
+	display: inline;
+	float: left;
+	text-align: center;
+	font-size: .8em;
+	font-weight: 300;
+	line-height: normal;
+	}
+div.threecolumn div p {
+	text-align: left;
+	margin-top: 5px;
+	padding: 5px 30px 5px 30px;
+	}
+div.threecolumn div.column.first {
+	width: 29%;
+	margin-right: 3%;
+	}
+div.threecolumn div.column.middle {
+	width: 29%;
+	margin-left: 3%;
+	margin-right: 3%;
+	}
+div.threecolumn div.column.last {
+	width: 29%;
+	margin-left: 3%;
+	}
+div.threecolumn img {
+	width: 200px;
+	height: 200px;
+	}
+div.start_form .nextbutton {
+	margin: 0;
+	}
+div.threecolumn.donepage {
+	margin-top: 10px;
+	}
+div.threecolumn.donepage h2 {
+	font-size: 1.5em;
+	font-weight: 700;
+	vertical-align: top;
+	margin-top: 10px;
+	margin-bottom: -10px;
+	}
+div.threecolumn.donepage h2 img {
+	width: 70px;
+	height: 150px;
+	padding-right: 15px;
+	margin-top: -25px;
+}
+div.threecolumn span.instructions.donepage {
+	width: 80%;
+	text-align: right;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	}
+div.threecolumn span.form_label {
+	margin-left: 10px;
+	}
+div.threecolumn.donepage div.line {
+	height: 350px;
+	}
+/* ======================================= END SPLASH PAGE */
+
+
+
+/* ######################################## HOW PAGE */
+div.pagecontent h4 {
+	color: #444444;
+	font-size: 1.6em;
+	font-weight: 600;
+	margin: 20px 0 20px 0;
+	line-height: normal;
+	text-align: left;
+	margin-bottom: -20px;
+	}
+div.pagecontent div.actionsteps {
+	margin-bottom: 20px;
+	}
+div.pagecontent div.actionsteps div {
+	width: 100%;
+	border-bottom: 1px solid #5D478B;
+	margin-top: 40px;
+	}
+div.pagecontent div.actionsteps div.first {
+	height: 150px;
+	}
+div.pagecontent div.actionsteps div.middle {
+	height: 250px;
+	}
+div.pagecontent div.actionsteps div.last {
+	height: 250px;
+	}
+div.pagecontent div.actionsteps div.last p span.sidenote {
+	font-size: .6em;
+	}
+div.pagecontent div.actionsteps div img {
+	float: left;
+	margin-right: 80px;
+	}
+div.pagecontent div.actionsteps div ul {
+	list-style-type: disc;
+	list-style-position: outside;
+	}
+div.pagecontent div.actionsteps div ul li {
+	margin-left: 240px;
+	}
+/* ======================================= END HOW PAGE */
+
+
+
+/* ######################################## PRE-PAID VOUCHER PAGE */		
+div.actionsteps {
+	margin-bottom: 20px;
+	padding-top: 40px;
+	}
+div.actionsteps div {
+	width: 100%;
+	border-bottom: thin solid #5D478B;
+	margin-top: 40px;
+	}
+div.actionsteps div.first {
+	height: 250px;
+	}
+div.actionsteps div.middle {
+	height: 250px;
+	}
+div.actionsteps div.last {
+	height: 250px;
+	}
+div.actionsteps p span.sidenote {
+	font-size: .6em;
+	}
+div.actionsteps div img {
+	float: left;
+	margin-right: 80px;
+	}
+div.actionsteps div p a {
+	text-decoration: underline;
+	}
+
+/* ==================================== END CLINICAL ACCESS */
+
+
+
+/* ######################################## PAYMENT & THANKS PAGES */
+div.topsection h3 {
+	font-size: .8em;
+	font-style: italic;
+	line-height: normal;
+	color: #666666;
+	margin-bottom: 20px;
+	padding-left: 10px;
+	}
+div.sliderlabel {
+	font-weight: 500;
+	font-size: 1em;
+	float: left;
+	/*width: 100px;*/
+	margin-left: 50px;
+	margin-top: -10px;
+	display: inline;
+	}
+div.sliderlabel input[type=text] {
+	color:#f6931f; 
+	color: #460069;
+	font-weight: 500;
+	font-size: .9em;
+	width: 60px;
+	}
+div.sliderlabel input[type=text]#amount, div.sliderlabel input[type=text]#amountcards {
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
+	border: none;
+	-moz-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.0) inset;
+	-webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.0) inset;
+	box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.0) inset;
+	background-color: #FFFFFF;
+	}
+ul#slidernumbers {
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	margin-top: 50px;
+	}
+ul#slidernumbers li {
+	display: inline;
+	font-weight: 500;
+	font-size: .8em;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	}
+ul#slidernumbers li.start {
+	margin-left: -30px;
+	}
+ul#slidernumbers li.on {
+	margin-left: 47px;
+	color:#f6931f; 
+	}
+ul#slidernumbers li.last {
+	margin-left: 260px;
+	}
+div#slider {
+	width: 400px;
+	font-size: .9em;
+	margin-left: 25px;
+	margin-bottom: 50px;
+	margin-top: 0px;
+	padding-top: 0px;
+	float: left;
+	display: inline;
+	}
+div#payment {
+	/*width: 80%;*/
+	clear: both;
+	margin-top: 50px;
+	}
+div#inputdata {
+	margin-left: -40px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	}
+div#payment div.form-row {
+	clear: both;
+	}
+div#payment div.form-row p {
+	font-size: .8em;
+	margin-left: 27%;
+	margin-bottom: 10px;
+	width: 60%;
+	}
+div#payment div.form-row label {
+	display: inline;
+	width: 25%;
+	padding-top: 2px;
+	text-align: right;
+	padding-right: 20px;
+	padding-left: 0px;
+	font-weight: 500;
+	font-size: .9em;
+	color: #460069;
+	color: #662D91;
+	float: left;
+	}
+div#payment input[type=text] {
+	display: inline;
+	font-family: "Helvetica Neue", Arial, Verdana, sans-serif;
+	padding: 9px 7px 10px 7px;
+	font-size: 1em;
+	height: 20px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	margin-bottom: 8px;
+	opacity: 1;
+	border: 1px solid rgba(100, 100, 100, 0.5);
+	-moz-box-shadow: 0px 0px 3px rgba(100, 100, 100, 0.5) inset;
+	-webkit-box-shadow: 0px 0px 3px rgba(100, 100, 100, 0.5) inset;
+	box-shadow: 0px 0px 3px rgba(100, 100, 100, 0.5) inset;
+	}
+div#payment h2 { /*added to make a nice header for pay.php page*/
+	font-size: 1.5em; 
+	margin: .75em 0;
+	}
+input[type=text].card-name {
+	width: 400px;
+	}
+input[type=text].card-number {
+	width: 300px;
+	}
+input[type=text].card-cvc {
+	width: 60px;
+	}
+input[type=text].card-expiry-month {
+	width: 30px;
+	}
+input[type=text].card-expiry-year {
+	width: 60px;
+	}
+div#payment input[type=text].message {
+	height: 100px;
+	}
+div.pdfdisplay object {
+	height: 300px;
+	margin: 10px;
+	margin-top: 0px;
+	margin-left: 0px;
+	border: 1px solid #888;
+	}
+fieldset#bulkcards {
+	width: 300px;
+	float: left;
+	padding-left: 20px;
+	}
+fieldset#bulkcards label {
+	display: inline;
+	padding-top: 3px;
+	text-align: right;
+	padding-right: 20px;
+	padding-left: 10px;
+	font-weight: 500;
+	font-size: .9em;
+	color: #460069;
+	color: #662D91;
+	/*float: left;*/
+	}
+fieldset#bulkcards ul li.radio-option {
+	display: block;
+	}
+fieldset#bulkcards legend.bulk {
+	font-size: 1em;
+	margin-left: -20px;
+	}
+div.scholarshipcopy {
+	clear: both;
+}
+div.scholarshipcopy p {
+	margin-top: 10px;
+	font-size: .9em;
+	}
+div.scholarshipcopy p a {
+	text-decoration: underline;
+	}
+div#voucherbox {
+	display: block;
+	float: right;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 250px;
+	font-weight: 500;
+	font-size: .9em;
+	}
+span.payment-errors {
+	color: red;
+	font-size: .9em;
+	}
+div.errors {
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: -20px;
+	}
+img.threecolumnimg {
+	margin-bottom: -20px;
+}
+a.backbutton.donepage {
+	margin-bottom: 15px;
+}
+button.nextbutton.donepage {
+	margin-top: -30px;
+}
+/* ==================================== END PAYMENT & THANKS PAGES */
+
+
+
+/* ######################################## FOOTER */
+#footer #bottomlinks {
+	font-size: .6em;
+	font-weight: 400;
+	color: #777777;
+	clear: both;
+	text-align: center;
+	padding-top: 20px;
+	}
+#footer #bottomlinks ul {
+	margin-left: auto;
+	margin-right: auto;
+	width: 600px;
+	}
+#footer #bottomlinks ul li {
+	display: inline;
+	margin-left: 3px;
+	margin-right: 3px;
+	}
+/* ======================================= END FOOTER */
+
+
+/* ################################## MAP*/
+/* ======================================= END MAP */
+	
+	
+/* ################################## SPECIFIC EXCEPTIONS */
+
+div#usmap p.questiontext {
+	margin-bottom: 0;
+	}
+div#usmap form {
+	width: 200px;
+	display: block;
+	float: right;
+	}
+a.underline {
+	text-decoration: underline;
+	}
+.red {
+	color: #CC0033;
+	}
+p.indent {
+	display: block;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	margin-left: 20px;
+	}
+span.pdfinstructions {
+	font-size: .8em;
+	color: #888888;
+	}
+span.innertext.index {
+	line-height: 2.55em;
+	margin-right: 4px;
+	}
+.red {
+	color: red;
+}
+p.legalinfo {
+	font-size: .7em;
+	color: #000000;
+	font-weight: 200;
+	clear: both;
+	float: right;
+	margin-top: -40px;
+}
+a.nextbutton.donepage.save {
+	margin-top: 20px;
+}
+a.nextbutton.donepage.center.print {
+	margin-top: 20px;
+}
+div.centericons.donepage {
+	float: right;
+}
+div.actionsteps div.middle img.pdficon {
+	margin-right: 0px;
+	padding: 0px;
+}
+p.pdficon a:link {
+	text-decoration: none;
+	margin-left: 10px;
+	font-weight: bold;
+}
+/* ================================= END SPECIFIC EXCEPTIONS */
+
+/* for testing: */
+
+/*floaty feedback link */
+/*#floating_link {
+     position: fixed;
+     right: 0;
+     top: 250px;
+     display: block;
+     width: 40px;
+     height: 124px;
+     text-indent: -10000px;
+     background-image: url(/images/feedback_pp.png);
+	 background-size: 40px;
+	 background-repeat: no-repeat;
+     overflow: hidden;
+	 cursor: pointer;
+	 border: 1px solid #6B3387;
+}*/
